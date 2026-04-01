@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | MindSage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { margin: 0; padding: 0; overflow: hidden; background: #0f172a; font-family: 'Poppins', sans-serif; }
+        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); position: relative; z-index: 10; }
+    </style>
+</head>
+<body id="vanta-canvas" class="flex items-center justify-center min-h-screen">
+    
+    <div class="glass p-8 rounded-2xl w-full max-w-md shadow-2xl text-white">
+        <h1 class="text-3xl font-bold text-center mb-2">MindSage 🧞‍♂️</h1>
+        <p class="text-slate-500 text-center mb-8 text-sm">Login to start your journey</p>
+        
+        <form id="loginForm" class="space-y-4">
+            <div>
+                <label class="block text-sm text-slate-400 mb-1">Email Address</label>
+                <input type="email" id="email" required class="w-full p-3 rounded-lg bg-slate-800 border border-slate-700 text-white focus:outline-none focus:ring-2 focus:ring-cyan-400" placeholder="Enter your email">
+            </div>
+            <div>
+                <label class="block text-sm text-slate-400 mb-1">Password</label>
+                <input type="password" id="password" required class="w-full p-3 rounded-lg bg-slate-800 border border-slate-700 focus:border-cyan-400 outline-none" placeholder="Enter your password">
+            </div>
+            <button type="submit" class="w-full bg-gradient-to-r from-cyan-400 to-blue-500 py-3 rounded-lg font-bold hover:scale-105 transition-transform">
+                LOG IN
+            </button>
+            <div class="flex items-center my-6">
+                <div class="flex-grow border-t border-slate-700"></div>
+                <span class="mx-4 text-slate-500 text-sm">OR</span>
+                <div class="flex-grow border-t border-slate-700"></div>
+            </div>
+
+            <button type="button" id="googleLoginBtn" class="w-full bg-white text-black py-3 rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-slate-200 transition-all">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" width="20" alt="Google">
+                Continue with Google
+            </button>
+
+            <p class="text-center text-sm text-slate-400 mt-6 pt-4">
+                Don't have an account? <a href="signup.html" class="text-cyan-400 hover:underline font-bold">Sign up here</a>
+            </p>
+
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script>
+        VANTA.NET({ el: "#vanta-canvas", mouseControls: true, touchControls: true, gyroControls: false, minHeight: 200.00, minWidth: 200.00, scale: 1.00, scaleMobile: 1.00, color: 0x3fc6ff, backgroundColor: 0x0f172a, points: 12.00, maxDistance: 20.00, spacing: 16.00 });
+    </script>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+        import { getAuth, signInWithPopup, GoogleAuthProvider, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyAb6ozoLOp7wtYSFqQ4vPWRJW4oKb4C2w0",
+            authDomain: "mindsage-edbeb.firebaseapp.com",
+            projectId: "mindsage-edbeb",
+            storageBucket: "mindsage-edbeb.firebasestorage.app",
+            messagingSenderId: "118728478646",
+            appId: "1:118728478646:web:49fb3f80c1bc6194ccfb17"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const provider = new GoogleAuthProvider();
+
+        document.getElementById('loginForm').addEventListener('submit', (e) => {
+            e.preventDefault(); 
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            signInWithEmailAndPassword(auth, email, password)
+                .then(() => {
+                    window.location.href = 'index.html'; 
+                })
+                .catch((error) => {
+                    alert("Login Failed: " + error.message); 
+                });
+        });
+
+        document.getElementById('googleLoginBtn').addEventListener('click', () => {
+            signInWithPopup(auth, provider)
+                .then(() => {
+                    window.location.href = 'index.html'; 
+                }).catch((error) => {
+                    alert("Google Login Failed: " + error.message);
+                });
+        });
+    </script>
+</body>
+</html>

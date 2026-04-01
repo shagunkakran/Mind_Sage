@@ -1,0 +1,102 @@
+Name,isReal,isMale,isIndian,isYoutuber,isActor,isCricketer,hasSuperpowers,isAnimated,isPolitician,isFootballer,isSinger,isVillain
+CarryMinati,1,1,1,1,0,0,0,0,0,0,0,0
+Bhuvan Bam,1,1,1,1,1,0,0,0,0,0,0,0
+Ashish Chanchlani,1,1,1,1,0,0,0,0,0,0,0,0
+Technical Guruji,1,1,1,1,0,0,0,0,0,0,0,0
+Flying Beast,1,1,1,1,0,0,0,0,0,0,0,0
+Sandip Maheshwari,1,1,1,1,0,0,0,0,0,0,0,0
+Virat Kohli,1,1,1,0,0,1,0,0,0,0,0,0
+MS Dhoni,1,1,1,0,0,1,0,0,0,0,0,0
+Rohit Sharma,1,1,1,0,0,1,0,0,0,0,0,0
+Shah Rukh Khan,1,1,1,0,1,0,0,0,0,0,0,0
+Salman Khan,1,1,1,0,1,0,0,0,0,0,0,0
+Akshay Kumar,1,1,1,0,1,0,0,0,0,0,0,0
+Deepika Padukone,1,0,1,0,1,0,0,0,0,0,0,0
+Alia Bhatt,1,0,1,0,1,0,0,0,0,0,0,0
+Iron Man,0,1,0,0,0,0,1,0,0,0,0,0
+Captain America,0,1,0,0,0,0,1,0,0,0,0,0
+Thor,0,1,0,0,0,0,1,0,0,0,0,0
+Spider-Man,0,1,0,0,0,0,1,0,0,0,0,0
+Batman,0,1,0,0,0,0,1,0,0,0,0,0
+Superman,0,1,0,0,0,0,1,0,0,0,0,0
+Narendra Modi,1,1,1,0,0,0,0,0,1,0,0,0
+Rahul Gandhi,1,1,1,0,0,0,0,0,1,0,0,0
+Arvind Kejriwal,1,1,1,0,0,0,0,0,1,0,0,0
+Lionel Messi,1,1,0,0,0,0,0,0,0,1,0,0
+Cristiano Ronaldo,1,1,0,0,0,0,0,0,0,1,0,0
+Arijit Singh,1,1,1,0,0,0,0,0,0,0,1,0
+Justin Bieber,1,1,0,0,0,0,0,0,0,0,1,0
+Joker,0,1,0,0,0,0,0,0,0,0,0,1
+Thanos,0,1,0,0,0,0,1,0,0,0,0,1
+Doraemon,0,1,0,0,0,0,1,1,0,0,0,0
+Shinchan,0,1,0,0,0,0,0,1,0,0,0,0
+Naruto,0,1,0,0,0,0,1,1,0,0,0,0
+Goku,0,1,0,0,0,0,1,1,0,0,0,0
+Luffy,0,1,0,0,0,0,1,1,0,0,0,0
+Pikachu,0,1,0,0,0,0,1,1,0,0,0,0
+Mickey Mouse,0,1,0,0,0,0,0,1,0,0,0,0
+Chhota Bheem,0,1,1,0,0,0,1,1,0,0,0,0
+Harry Potter,0,1,0,0,0,0,1,0,0,0,0,0
+Sherlock Holmes,0,1,0,0,0,0,0,0,0,0,0,0
+Jack Sparrow,0,1,0,0,0,0,0,0,0,0,0,0
+Elon Musk,1,1,0,0,0,0,0,0,0,0,0,0
+Ratan Tata,1,1,1,0,0,0,0,0,0,0,0,0
+Mukesh Ambani,1,1,1,0,0,0,0,0,0,0,0,0
+Sundar Pichai,1,1,1,0,0,0,0,0,0,0,0,0
+Mark Zuckerberg,1,1,0,0,0,0,0,0,0,0,0,0
+Amitabh Bachchan,1,1,1,0,1,0,0,0,0,0,0,0
+Sachin Tendulkar,1,1,1,0,0,1,0,0,0,0,0,0
+Ranbir Kapoor,1,1,1,0,1,0,0,0,0,0,0,0
+Shraddha Kapoor,1,0,1,0,1,0,0,0,0,0,0,0
+Priyanka Chopra,1,0,1,0,1,0,0,0,0,0,0,0
+Kriti Sanon,1,0,1,0,1,0,0,0,0,0,0,0
+Kiara Advani,1,0,1,0,1,0,0,0,0,0,0,0
+Neymar Jr,1,1,0,0,0,0,0,0,0,1,0,0
+Kylian Mbappe,1,1,0,0,0,0,0,0,0,1,0,0
+Diljit Dosanjh,1,1,1,0,1,0,0,0,0,0,1,0
+Badshah,1,1,1,0,0,0,0,0,0,0,1,0
+Honey Singh,1,1,1,0,0,0,0,0,0,0,1,0
+Eminem,1,1,0,0,0,0,0,0,0,0,1,0
+Taylor Swift,1,0,0,0,0,0,0,0,0,0,1,0
+Selena Gomez,1,0,0,0,0,0,0,0,0,0,1,0
+Voldemort,0,1,0,0,0,0,1,0,0,0,0,1
+Loki,0,1,0,0,0,0,1,0,0,0,0,1
+Shazam,0,1,0,0,0,0,1,0,0,0,0,0
+Black Panther,0,1,0,0,0,0,1,0,0,0,0,0
+Doctor Strange,0,1,0,0,0,0,1,0,0,0,0,0
+Wonder Woman,0,0,0,0,0,0,1,0,0,0,0,0
+The Flash,0,1,0,0,0,0,1,0,0,0,0,0
+Aquaman,0,1,0,0,0,0,1,0,0,0,0,0
+Zlatan Ibrahimovic,1,1,0,0,0,0,0,0,0,1,0,0
+Hardik Pandya,1,1,1,0,0,1,0,0,0,0,0,0
+Jasprit Bumrah,1,1,1,0,0,1,0,0,0,0,0,0
+Rishabh Pant,1,1,1,0,0,1,0,0,0,0,0,0
+Nobita,0,1,0,0,0,0,0,1,0,0,0,0
+Shizuka,0,0,0,0,0,0,0,1,0,0,0,0
+Motu,0,1,1,0,0,0,0,1,0,0,0,0
+Patlu,0,1,1,0,0,0,0,1,0,0,0,0
+Ben 10,0,1,0,0,0,0,1,1,0,0,0,0
+Hulk,0,1,0,0,0,0,1,0,0,0,0,0
+Black Widow,0,0,0,0,0,0,1,0,0,0,0,0
+Wanda Maximoff,0,0,0,0,0,0,1,0,0,0,0,0
+Harley Quinn,0,0,0,0,0,0,0,0,0,0,0,1
+Deadpool,0,1,0,0,0,0,1,0,0,0,0,1
+Bill Gates,1,1,0,0,0,0,0,0,0,0,0,0
+Steve Jobs,1,1,0,0,0,0,0,0,0,0,0,0
+Satya Nadella,1,1,1,0,0,0,0,0,0,0,0,0
+Rana Daggubati,1,1,1,0,1,0,0,0,0,0,0,0
+Prabhas,1,1,1,0,1,0,0,0,0,0,0,0
+Allu Arjun,1,1,1,0,1,0,0,0,0,0,0,0
+Rashmika Mandanna,1,0,1,0,1,0,0,0,0,0,0,0
+Sushant Singh Rajput,1,1,1,0,1,0,0,0,0,0,0,0
+Sridevi,1,0,1,0,1,0,0,0,0,0,0,0
+Kajol,1,0,1,0,1,0,0,0,0,0,0,0
+Aamir Khan,1,1,1,0,1,0,0,0,0,0,0,0
+Ranveer Singh,1,1,1,0,1,0,0,0,0,0,0,0
+Hrithik Roshan,1,1,1,0,1,0,0,0,0,0,0,0
+Tom Cruise,1,1,0,0,1,0,0,0,0,0,0,0
+Robert Downey Jr,1,1,0,0,1,0,0,0,0,0,0,0
+Chris Evans,1,1,0,0,1,0,0,0,0,0,0,0
+Chris Hemsworth,1,1,0,0,1,0,0,0,0,0,0,0
+Gal Gadot,1,0,0,0,1,0,0,0,0,0,0,0
+Lord Krishna,1,1,1,0,0,0,1,0,0,0,0,0

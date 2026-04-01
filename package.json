@@ -1,0 +1,29 @@
+
+{
+  "name": "mindsage",
+  "version": "1.0.0",
+  "description": "Akinator Clone with Node and Python",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^11.5.0",
+    "nodemailer": "^6.9.1",
+    "cors": "^2.8.5",
+    "path": "^0.12.7",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0",
+    "express-session": "^1.17.3",
+    "cookie-parser": "^1.4.6",
+    "body-parser": "^1.20.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
+
+
+
+
