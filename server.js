@@ -64,3 +64,4 @@ app.get('/auth/google/callback',
   passport.authenticate('google', { failureRedirect: '/login' }),
   (req, res) => { res.redirect('/index.html'); } // Success par game page
 );
+a=10
