@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 // 2. RENDER BACKEND URL (Ye tumhara naya address hai)
-const pythonURL = "https://mindsage-python.onrender.com";
+const pythonURL = "http://127.0.0.1:5000";
 
 // 3. Game Logic
 let userAnswers = {}; 

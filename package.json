@@ -1,4 +1,3 @@
-
 {
   "name": "mindsage",
   "version": "1.0.0",
@@ -8,22 +7,18 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.18.2",
+    "body-parser": "^1.20.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.6",
+    "express": "^4.22.1",
+    "express-session": "^1.17.3",
     "firebase-admin": "^11.5.0",
-    "nodemailer": "^6.9.1",
-    "cors": "^2.8.5",
-    "path": "^0.12.7",
+    "nodemailer": "^6.10.1",
     "passport": "^0.6.0",
     "passport-google-oauth20": "^2.0.0",
-    "express-session": "^1.17.3",
-    "cookie-parser": "^1.4.6",
-    "body-parser": "^1.20.2"
+    "path": "^0.12.7"
   },
   "engines": {
     "node": ">=14.0.0"
   }
 }
-
-
-
-

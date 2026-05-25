@@ -3,24 +3,33 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const passport = require('passport');
+const GoogleStrategy = require('passport-google-oauth20').Strategy;
+const path = require('path');
 
 const app = express();
+
 app.use(cors());
 app.use(bodyParser.json());
+
+// Serve frontend
+app.use(express.static(path.join(__dirname, 'static')));
 
 // Email Configuration
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'YOUR_EMAIL@gmail.com', // Aapka email
-        pass: 'YOUR_APP_PASSWORD'    // Google App Password
+        user: 'YOUR_EMAIL@gmail.com',
+        pass: 'YOUR_APP_PASSWORD'
     }
 });
 
+// Default Route
 app.get('/', (req, res) => {
-    res.json({ message: 'Welcome to MindSage!' });
+    res.sendFile(path.join(__dirname, 'static', 'login.html'));
 });
 
+// Login Route
 app.post('/login', (req, res) => {
     const { email } = req.body;
 
@@ -40,28 +49,33 @@ app.post('/login', (req, res) => {
     });
 });
 
-app.listen(3000, () => console.log('Server running on port 3000'));
-
-// Server.js mein ye extra lagega
-const passport = require('passport');
-const GoogleStrategy = require('passport-google-oauth20').Strategy;
-
+// Google Auth
 passport.use(new GoogleStrategy({
     clientID: "YOUR_GOOGLE_CLIENT_ID",
     clientSecret: "YOUR_GOOGLE_CLIENT_SECRET",
     callbackURL: "/auth/google/callback"
   },
   (accessToken, refreshToken, profile, done) => {
-    // Yahan aap user ka data save kar sakti hain
     return done(null, profile);
   }
 ));
 
-// Routes
-app.get('/auth/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
+app.use(passport.initialize());
+
+// Google Routes
+app.get('/auth/google', 
+passport.authenticate('google', { scope: ['profile', 'email'] })
+);
 
 app.get('/auth/google/callback', 
-  passport.authenticate('google', { failureRedirect: '/login' }),
-  (req, res) => { res.redirect('/index.html'); } // Success par game page
+passport.authenticate('google', { failureRedirect: '/' }),
+(req, res) => {
+res.redirect('/index.html');
+});
+
+// Start Server
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => 
+console.log(`Server running on port ${PORT}`)
 );
-a=10
