@@ -104,7 +104,7 @@ from sklearn.tree import DecisionTreeClassifier
 import csv
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='', static_folder='static')
 
 # MASTER CORS FIX: Sab kuch allow kar do!
 CORS(app, resources={r"/*": {
@@ -112,6 +112,10 @@ CORS(app, resources={r"/*": {
     "methods": ["GET", "POST", "OPTIONS"],
     "allow_headers": ["Content-Type"]
 }})
+
+@app.route('/')
+def home():
+    return app.send_static_file('login.html')
 
 # Data load logic
 CSV_FILE = 'characters.csv'
